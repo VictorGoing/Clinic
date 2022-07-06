@@ -1,8 +1,7 @@
-package com.example.backclinic.apis.eva.controller;
+package com.example.backclinic.api.eva.controller;
 
-import com.example.backclinic.apis.eva.downloaded.EmailData;
-import com.example.backclinic.apis.eva.downloaded.EmailDetails;
-import com.example.backclinic.apis.eva.service.EmailValidationService;
+import com.example.backclinic.api.eva.downloaded.EmailDetails;
+import com.example.backclinic.api.eva.service.EmailValidationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

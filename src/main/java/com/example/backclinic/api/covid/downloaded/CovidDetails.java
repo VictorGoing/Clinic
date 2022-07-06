@@ -1,4 +1,4 @@
-package com.example.backclinic.apis.covid.downloaded;
+package com.example.backclinic.api.covid.downloaded;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

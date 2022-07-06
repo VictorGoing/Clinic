@@ -1,4 +1,4 @@
-package com.example.backclinic.apis.eva.downloaded;
+package com.example.backclinic.api.eva.downloaded;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.example.backclinic.apis.covid.dto;
+package com.example.backclinic.api.covid.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

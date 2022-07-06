@@ -1,7 +1,7 @@
-package com.example.backclinic.apis.covid.mapper;
+package com.example.backclinic.api.covid.mapper;
 
-import com.example.backclinic.apis.covid.downloaded.CovidInfoDownloaded;
-import com.example.backclinic.apis.covid.dto.CovidInfoDto;
+import com.example.backclinic.api.covid.downloaded.CovidInfoDownloaded;
+import com.example.backclinic.api.covid.dto.CovidInfoDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

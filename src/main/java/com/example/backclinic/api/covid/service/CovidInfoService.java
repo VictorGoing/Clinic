@@ -1,6 +1,6 @@
-package com.example.backclinic.apis.covid.service;
+package com.example.backclinic.api.covid.service;
 
-import com.example.backclinic.apis.covid.downloaded.CovidInfoDownloaded;
+import com.example.backclinic.api.covid.downloaded.CovidInfoDownloaded;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;

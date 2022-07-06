@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Getter
 @Setter
@@ -22,7 +23,7 @@ public class Patient implements ClinicUser{
     @GeneratedValue
     @NotNull
     @Column(name = "ID", unique = true)
-    private Long Id;
+    private Long id;
 
     @Column(name = "FIRSTNAME")
     private String firstName;
@@ -36,8 +37,22 @@ public class Patient implements ClinicUser{
     @Column(name = "PATIENTPASSWORD")
     private String password;
 
+    @OneToMany(
+            targetEntity = Appointment.class,
+            mappedBy = "patient",
+            cascade = CascadeType.PERSIST,
+            fetch = FetchType.LAZY)
+    private List<Appointment> appointments;
+
     @Override
     public String getRole() {
         return role;
+    }
+
+    public Patient(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
     }
 }

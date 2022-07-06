@@ -5,8 +5,18 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Transactional
 @Repository
 public interface PatientRepository extends CrudRepository<Patient,Long> {
-    Patient findByEmail(String email);
+
+
+    Optional<Patient> findByEmail(String email);
+
+    @Override
+    Optional<Patient> findById(Long patientId);
+
+    @Override
+    void deleteById(Long patientId);
 }
